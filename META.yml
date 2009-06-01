@@ -1,19 +1,22 @@
---- #YAML:1.0
-name:               Bytes-Random
-version:            0.01
-abstract:           Perl extension to generate random bytes.
+---
+abstract: 'Perl extension to generate random bytes.'
 author:
-    - John <john@>
-license:            unknown
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
-requires:  {}
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.48
+  - 'John Drago, <jdrago_999@yahoo.com>'
+build_requires:
+  Statistics::Basic: 0
+distribution_type: module
+generated_by: 'Module::Install version 0.79'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Bytes-Random
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  perl: 5.6.0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.02

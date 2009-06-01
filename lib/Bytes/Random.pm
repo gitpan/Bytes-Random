@@ -1,7 +1,7 @@
 
 package Bytes::Random;
 
-use 5.008000;
+use 5.006000;
 use strict;
 use warnings;
 use bytes;
@@ -14,7 +14,7 @@ our @EXPORT = qw(
 	random_bytes
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 #==============================================================================
@@ -26,7 +26,7 @@ sub random_bytes
   my @out = ( );
   for( 1..$number )
   {
-    my $rand = int( rand() * 255 );
+    my $rand = int( rand() * 256 );
     push @out, chr( $rand );
   }# end for()
   
@@ -61,7 +61,7 @@ Returns a string containing as many random bytes as was requested.
 
 =head1 AUTHOR
 
-John Drago, E<lt>jdrago_999@yahoo.com<gt>
+John Drago, E<lt>jdrago_999@yahoo.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
